@@ -1,6 +1,10 @@
 /* font style */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
+.heading {
+    font-size: 3.12rem;
+    font-weight: bold;
+}
 
 .text {
     color: rgba(0, 0, 0, 0.5);
@@ -30,6 +34,13 @@
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
+}
+
+.colorful-bunch {
+    background-image: url(./assets/news-letter-bg.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 @media screen and (max-width: 576px) {
@@ -72,5 +83,30 @@
         flex-direction: column;
         padding: 10px;
     }
+
+    .colorful-bunch {
+        width: 393px;
+        height: 275px;
+    }
+
+    .bunch-content {
+        padding: 80px 25px;
+    }
+
+    .heading {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    .bunch-content input {
+        width: 218px;
+    }
+
+    .bunch-content button {
+        width: 103px;
+    }
+
+
+}
 
 }
